@@ -7,5 +7,6 @@ run = True
 while run == True:
     string_input = input("> ")
     user_list = user_input.UserInputToList(string_input)
-    # print(user_list)
-    
+    print(user_list)
+    user_input.PutFetchExitLogic(user_list,user_storage)
+    print(user_storage)
