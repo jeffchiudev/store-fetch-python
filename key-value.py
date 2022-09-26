@@ -7,7 +7,6 @@ run = True
 while run == True:
     string_input = input("> ")
     user_list = user_input.UserInputToList(string_input)
-    # print(len(user_list))
 
     if (user_list[0] == "put" and (len(user_list) > 3 or len(user_list) < 3)) or (user_list[0] == "fetch" and (len(user_list) > 2 or len(user_list) < 2)) or (user_list[0] == "exit" and len(user_list) > 1):
         print("Invalid syntax.")
@@ -22,6 +21,3 @@ while run == True:
             run = False
         else:
             print('Unknown command. Known commands are: "put", "fetch", "exit".')
-
-
-    # print(user_storage)
