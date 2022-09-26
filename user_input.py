@@ -2,10 +2,10 @@ def UserInputToList(x):
     user_list = x.split(" ")
     return user_list
 
-def PutLogic(x,dictionary):
-    dictionary[x[1]] = x[2]
+def PutLogic(list,dictionary):
+    dictionary[list[1]] = list[2]
     return dictionary
 
-def FetchLogic(x,dictionary):
-    value = dictionary.get(x[1], "Values not found.")
+def FetchLogic(list,dictionary):
+    value = dictionary.get(list[1], "Value not found.")
     print(value)
