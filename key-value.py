@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import user_input
 
 user_storage = {}
